@@ -1,0 +1,30 @@
+.main {
+    margin:0;
+}
+
+
+.background {
+    background-image: linear-gradient(-15deg,#6BADD5 2%,#191348 85%);
+    height:200px;
+    display:block;
+
+    
+}
+
+
+.productTitle {
+    font-family: gotham rounded a,gotham rounded b,sans-serif;
+    font-size:5.5rem;    
+    color:white;
+    text-align:center;
+}
+
+.productTitle a {
+    text-decoration: none;
+    color:white;
+    text-align:right;
+}
+
+.productDescription {
+    font-size:2.5rem;
+}

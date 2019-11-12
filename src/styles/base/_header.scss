@@ -1,0 +1,100 @@
+.Header {
+    clear: both;
+    display: flex;
+
+    margin:0 auto;
+    background:black;
+    text-decoration: none;
+    width:100%;
+}
+
+.Header h1 {
+  
+   
+    margin:0;
+    color:white;
+    text-align: center;
+
+
+    
+}
+
+.Header a {
+    text-decoration: none;
+
+
+    
+}
+.inlineImage {
+    float:left;
+    padding-bottom: 1rem
+  
+
+}
+
+.inlineText {
+    float:left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+ 
+   
+
+}
+
+.Header img {
+    text-decoration: none;
+    
+    width:20%;
+
+    
+}
+
+
+.MainColor{
+ 
+    height:100%;
+    width:100%;
+    padding:2rem;
+    margin:0;
+    transition: 0.5s;
+    display:block;
+
+    color:white;
+}
+
+.MainColor:hover {
+    background-color:rgb(166, 166, 166);
+    height:100%;
+    width:100%;
+    padding:2rem;
+    margin:0;
+    transition: 0.5s;
+    display:block;
+
+    color:white;
+}
+.push{
+    padding:3.5rem 2rem 2rem 2rem;
+    display:inline-block;
+
+    color:white;
+    text-align: center;
+    margin-left: auto;
+
+}
+.navLinkChildren{
+    padding:3.5rem 2rem 2rem 2rem;
+    display:block;
+    text-align: center;
+
+    color:white;
+ 
+    
+}
+
+.is-active {
+    font-weight: bold; 
+
+}
+
+
