@@ -1,24 +1,32 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import {products} from '../products/products'
 import Header from '../components/Header';
-import FlowPro from '../components/FlowPro';
-import Scrutinizer from '../components/Scrutinizer';
 import Home from '../components/Home';
 import Intergrations from '../components/Intergrations'
-import Replicator from '../components/Replicator'
+import Product from '../components/product/product.component'
 
 
 
-const AppRouter =() =>(
+const AppRouter =(props) =>(
+
     <BrowserRouter>
     <div className="container">
       <Header />
       <Switch>
         <Route path="/" component={Home} exact={true} />
-        <Route path="/scrutinizer" component={Scrutinizer} />
-        <Route path="/flowpro" component={FlowPro} />
-        <Route path="/replicator" component={Replicator} />
+        <Route path="/scrutinizer" 
+            render={()=> <Product {...products.scrutinizer }  data={props.exporters}/>
+          }/>
+
+        <Route path="/flowpro" 
+          render={()=> <Product {...products.flowPro} />
+        }/>
+
+        <Route path="/replicator"
+          render={()=> <Product {...products.replicator} />
+        }/>
+
         <Route path="/intergrations" component={Intergrations} />
 
       </Switch>
